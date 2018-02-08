@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  db:
+    image: postgres
+    ports:
+      - "5555:5432"
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/fiyat
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
