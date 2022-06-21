@@ -3,7 +3,7 @@ django-oauth-toolkit==1.0.0
 django-cors-headers==2.0.1
 django-rest-framework-social-oauth2==1.0.8
 djangorestframework==3.6.3
-numpy==1.13.1
+numpy==1.22.0
 oauthlib==2.0.2
 pandas==0.20.3
 psycopg2==2.7.1
